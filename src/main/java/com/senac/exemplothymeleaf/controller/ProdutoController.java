@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.senac.exemplothymeleaf.controller;
 
 import com.senac.exemplothymeleaf.model.Produto;
@@ -40,8 +36,10 @@ import org.springframework.web.bind.annotation.PostMapping;
             public String listaTarefas(Model model) { 
                 // Criação de objetos Produto e adição à coleção produtos 
                 produtos.add(new Produto(1, "Camiseta Oversized", "M", 15, 25.5));
-                produtos.add(new Produto(1, "Camiseta Oversized", "G", 8, 25.5));
-                produtos.add(new Produto(1, "Camiseta Oversized", "GG", 12, 25.5));
+                produtos.add(new Produto(2, "Camiseta Oversized", "G", 8, 25.5));
+                produtos.add(new Produto(3, "Camiseta Oversized", "GG", 12, 25.5));
+                produtos.add(new Produto(4, "Camiseta Oversized", "XGG", 15, 30.5));
+                produtos.add(new Produto(5, "Camiseta Oversized", "EXGG", 4, 35.5));
                 // Adição da coleção tarefas ao modelo 
                 model.addAttribute("produtos", produtos); 
                 // Retorna o nome da página que será renderizada 
